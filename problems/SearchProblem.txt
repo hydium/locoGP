@@ -1,0 +1,12 @@
+public class SearchProblemTest {
+	 public static int search(Integer []a , Integer length, Integer num) {
+	 	int index = -1;
+	 	for (int i = 0; i < length; i++) {
+	 		if  (a[i] == num) {
+	 			index = i;
+	 			break;
+	 		}
+	 	}
+	 	return index;
+	 }
+}
