@@ -18,6 +18,7 @@ import locoGP.operators.StatementOnlyCrossoverOperator;
 import locoGP.operators.NodeSelector;
 import locoGP.problems.Problem;
 
+import locoGP.problems.ExponentialSearchProblem;
 import locoGP.problems.JumpSearchProblem;
 import locoGP.problems.SearchProblem;
 import locoGP.problems.BinarySearchProblem;
@@ -82,7 +83,9 @@ public class locoGP {
 		
 //		aProblem = new BinarySearchProblem();
 		
-		aProblem = new JumpSearchProblem();
+//		aProblem = new JumpSearchProblem();
+		
+		aProblem = new ExponentialSearchProblem();
 		
 		//aProblem = new Sort1CloneProblem(1);
 		//aProblem = new Sort1SegmentedCloneProblem(2);
