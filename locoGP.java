@@ -5,6 +5,7 @@ package locoGP;
 
 import locoGP.experiments.GPConfig;
 
+
 import locoGP.fitness.IndividualEvaluator;
 import locoGP.fitness.bytecodeCount.ByteCodeIndividualEvaluator;
 import locoGP.fitness.runTimer.RunTimerIndividualEvaluator;
@@ -17,6 +18,7 @@ import locoGP.operators.NodeSelector;
 import locoGP.problems.Problem;
 
 import locoGP.problems.SearchProblem;
+import locoGP.problems.BinarySearchProblem;
 
 import locoGP.problems.Sort1Problem; // bubblesort
 import locoGP.problems.Sort1CocktailProblem; // depending on the problem you select
@@ -75,6 +77,8 @@ public class locoGP {
 //		aProblem = new Sort1Problem();
 		
 		aProblem = new SearchProblem();
+		
+//		aProblem = new BinarySearchProblem();
 		
 		//aProblem = new Sort1CloneProblem(1);
 		//aProblem = new Sort1SegmentedCloneProblem(2);
@@ -171,6 +175,8 @@ public class locoGP {
 			//currentGen.clearBacklinks(nextGen);
 			currentGen = nextGen;
 		}
+		
+		System.out.println("ending\n");
 		
 		//currentGen.getOurIndEval().shutdownAllThreads();
 		Logger.logAll("End GP ------------------------- GP_End pop: "
