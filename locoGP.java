@@ -6,6 +6,7 @@ package locoGP;
 import locoGP.experiments.GPConfig;
 
 
+
 import locoGP.fitness.IndividualEvaluator;
 import locoGP.fitness.bytecodeCount.ByteCodeIndividualEvaluator;
 import locoGP.fitness.runTimer.RunTimerIndividualEvaluator;
@@ -17,6 +18,7 @@ import locoGP.operators.StatementOnlyCrossoverOperator;
 import locoGP.operators.NodeSelector;
 import locoGP.problems.Problem;
 
+import locoGP.problems.JumpSearchProblem;
 import locoGP.problems.SearchProblem;
 import locoGP.problems.BinarySearchProblem;
 
@@ -76,9 +78,11 @@ public class locoGP {
 		
 //		aProblem = new Sort1Problem();
 		
-		aProblem = new SearchProblem();
+//		aProblem = new SearchProblem();
 		
 //		aProblem = new BinarySearchProblem();
+		
+		aProblem = new JumpSearchProblem();
 		
 		//aProblem = new Sort1CloneProblem(1);
 		//aProblem = new Sort1SegmentedCloneProblem(2);
