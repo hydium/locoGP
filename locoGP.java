@@ -7,6 +7,7 @@ import locoGP.experiments.GPConfig;
 
 
 
+
 import locoGP.fitness.IndividualEvaluator;
 import locoGP.fitness.bytecodeCount.ByteCodeIndividualEvaluator;
 import locoGP.fitness.runTimer.RunTimerIndividualEvaluator;
@@ -22,6 +23,7 @@ import locoGP.problems.ExponentialSearchProblem;
 import locoGP.problems.JumpSearchProblem;
 import locoGP.problems.SearchProblem;
 import locoGP.problems.BinarySearchProblem;
+import locoGP.problems.FibonacciSearchProblem;
 
 import locoGP.problems.Sort1Problem; // bubblesort
 import locoGP.problems.Sort1CocktailProblem; // depending on the problem you select
@@ -85,7 +87,9 @@ public class locoGP {
 		
 //		aProblem = new JumpSearchProblem();
 		
-		aProblem = new ExponentialSearchProblem();
+//		aProblem = new ExponentialSearchProblem();
+		
+		aProblem = new FibonacciSearchProblem();
 		
 		//aProblem = new Sort1CloneProblem(1);
 		//aProblem = new Sort1SegmentedCloneProblem(2);
